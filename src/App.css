@@ -1,0 +1,106 @@
+#body {
+  background: white;
+}
+
+#todo-list {
+  width: 500px;
+  margin: 60px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+button {
+  font-size: 16px;
+  background-color: rgb(217, 60, 35);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(173, 47, 28);
+}
+
+button:active {
+  background-color: rgb(130,35,21);
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type='text'] { 
+  font-size: 20px;
+  font-family: monospace;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.newTodo {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.todos-empty {
+  border: none;
+}
+
+.todos {
+  border: 1px solid black;
+}
+
+.todo, .todo-completed {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin: 5px;
+}
+
+.todo {
+  background: none;
+}
+
+.todo-completed {
+  /* background: darkblue;
+  background-color: darkblue; */
+  opacity: 0.1;
+}
+
+.todo-text input {
+  padding: 4px;
+}
+
+.todo-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+}
