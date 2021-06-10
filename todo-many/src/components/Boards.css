@@ -1,0 +1,11 @@
+.boards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.board {
+  padding: 5px;
+  background-color: lightgray;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import './Todos.css';
 
 
-function App() {
+function Todos(props) {
   const [todos, setTodos] = React.useState([]);
   const [todo, setTodo] = React.useState("");
   const [todoEditing, setTodoEditing] = React.useState(null);
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div id="todo-list">
-      <h1>Todo List</h1>
+      <h1>{props.title}</h1>
 
       <form className="newTodo" onSubmit={handleSubmit}>
         <input
@@ -120,4 +120,4 @@ function App() {
   );
 }
 
-export default App;
+export default Todos;
